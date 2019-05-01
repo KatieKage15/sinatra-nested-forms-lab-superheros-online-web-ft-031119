@@ -1,12 +1,14 @@
 class SuperHero
   attr_accessor :name, :power, :bio
 
-  @@all = []
+  def self.all
+    @@all ||= []
+  end
 
-  def initialize(:name, :power, :bio)
-    @name = params[:name]
-    @power = params[:power]
-    @bio = params[:bio]
+  def initialize(opts={})
+    @name  = opts[:name]
+    @power = opts[:power]
+    @bio   = opts[:bio]
     self.save
   end
 
