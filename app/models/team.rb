@@ -1,8 +1,8 @@
 class Team
   attr_accessor :name, :motto
 
-  def initialize(opts={})
-    @name  = opts[:name]
-    @motto = opts[:motto]
+  def initialize(params={})
+    @name  = params[:name]
+    @motto = params[:motto]
   end
 end
