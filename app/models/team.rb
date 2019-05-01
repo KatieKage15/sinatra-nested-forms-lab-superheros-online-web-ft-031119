@@ -6,4 +6,3 @@ class Team
     @motto = params[:motto]
   end
 end
-end
