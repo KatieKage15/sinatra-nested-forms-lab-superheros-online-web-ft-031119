@@ -4,10 +4,11 @@
   <h2>Team Motto: <%= @team.otto %></h2>
 </div><br>
 
-<h1>Courses</h1>
-<% @courses.each do |course| %>
-  <div class="course">
-    <p>Name: <%= course.name %></p><br>
-    <p>Topic: <%= course.topic %></p><br>
+
+<% @heros.each do |hero| %>
+  <div class="superhero">
+    <h2>Name Name: <%= hero.name %></h2><br>
+    <p>Hero's Power: <%= hero.power %></p><br>
+    <p>Hero's Biography: <%= hero.bio %></p><br>
   </div><br>
 <% end %>
